@@ -1,0 +1,22 @@
+@charset "UTF-8";
+
+
+
+
+.nav-inicial{
+    display: flex;
+    justify-content: space-between;
+}
+.nav-inicial img{
+    width: 30px;
+}
+
+.nav-botoes{
+    display: flex;
+    gap: 1rem;
+    list-style-type: none;
+}
+.nav-botoes a{
+    color: #a08452;
+    text-decoration: none;
+}

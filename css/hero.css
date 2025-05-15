@@ -1,0 +1,25 @@
+@charset "UTF-8";
+
+.conteiner-color{
+    background-color: #0a192f;
+}
+
+
+
+ .conteiner-hero{
+        display: flex;
+        justify-content: space-around;
+        
+}
+.conteiner-hero a{
+    color: #a08452;
+    text-decoration: none;
+}
+.hero-titulo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    color: #a08452;
+
+}
