@@ -8,13 +8,15 @@
     justify-content: space-between;
 }
 .nav-inicial img{
-    width: 30px;
+   width: 90px;
+   height: 60px;
 }
 
 .nav-botoes{
     display: flex;
     gap: 1rem;
     list-style-type: none;
+    font-size: 2rem;
 }
 .nav-botoes a{
     color: #a08452;
