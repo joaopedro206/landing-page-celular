@@ -8,8 +8,9 @@
 
  .conteiner-hero{
     display: flex;
-        height: 80vh;
-       
+    align-items: end;
+        height: 70vh;
+       position: relative;
 }
 .conteiner-hero a{
     color: #a08452;
@@ -21,5 +22,12 @@
     justify-content: center;
     color: #a08452;
     position: absolute;
+    top: 20%;
+    left: 19%;
 
+
+}
+.img-hero{
+    width: 400px;
+    height:400px;
 }
