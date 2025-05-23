@@ -9,7 +9,7 @@
  .conteiner-hero{
     display: flex;
     align-items: end;
-        height: 75vh;
+        height: 60vh;
        position: relative;
 }
 .conteiner-hero a{
