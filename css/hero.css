@@ -9,7 +9,7 @@
  .conteiner-hero{
     display: flex;
     align-items: end;
-        height: 60vh;
+        height: 65vh;
        position: relative;
 }
 .conteiner-hero a{
@@ -24,12 +24,9 @@
     position: absolute;
     top: 20%;
     left: 19%;
-
-
 }
 .img-hero{
     position: absolute;
-    right: 0.01%;
-    width: 110%;
-    height:87%;
+    right: 1%;
+   height: 80%;
 }
