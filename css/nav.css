@@ -4,22 +4,9 @@
 
 
 .nav-inicial{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+    position: absolute;
 }
 .nav-inicial img{
-   width: 48px;
-   height: 48px;
-}
-
-.nav-botoes{
-    display: flex;
-    gap: 1rem;
-    list-style-type: none;
-    font-size: 2rem;
-}
-.nav-botoes a{
-    color: #a08452;
-    text-decoration: none;
+   width: 60px;
+   height: 60px;
 }

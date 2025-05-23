@@ -28,6 +28,8 @@
 
 }
 .img-hero{
-    width: 400px;
-    height:400px;
+    position: relative;
+    right: 5%;
+    width: 200%;
+    height:87%;
 }
