@@ -4,9 +4,10 @@
 
 
 .nav-inicial{
-    position: absolute;
+    position: relative;
 }
 .nav-inicial img{
+    position: absolute;
    width: 60px;
    height: 60px;
 }
