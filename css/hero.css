@@ -3,9 +3,6 @@
 .conteiner-color{
     background-color: #0a192f;
 }
-
-
-
  .conteiner-hero{
     position: relative;
     display: flex;
@@ -28,6 +25,6 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
-    object-position:50%;
+    object-position: 50%;
     
 }
