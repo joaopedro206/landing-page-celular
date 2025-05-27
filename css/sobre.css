@@ -12,10 +12,13 @@
     
 }
 .conteiner-color-texto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: #6b4e2e;
     height: 32.1rem;
     width: 22.5rem;
-    border-radius: 10%;
+    border-radius: 2rem;
     position: absolute;
     top: 14rem;
     left: 13.3rem;
@@ -23,7 +26,7 @@
 .texto-descritivo{
     position: relative;
     font-size: 1.5rem;
-    padding: 10px;
+    padding: 0px 10px 0px 10px;
     text-align: center;
     color:#e4e4e4 ;
 }
@@ -32,7 +35,7 @@
 
 }
 .img-sobre{
-    border-radius: 20px;
+    border-radius: 2rem;
         width: 60vw
         
 }
