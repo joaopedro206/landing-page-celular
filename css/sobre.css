@@ -1,14 +1,38 @@
 @charset "UTF-8";
 
-
+.sobre{
+    position: relative;
+}
 .conteiner-titulo-sobre{
     display: flex;
     justify-content: center;
     font-size: 3rem;
-}
-.conteiner-sobre{
+    margin-bottom: 20rem;
+    color: #a08452;
     
 }
+.conteiner-color-texto{
+    background-color: #6b4e2e;
+    height: 32.1rem;
+    width: 22.5rem;
+    border-radius: 10%;
+    position: absolute;
+    top: 14rem;
+    left: 13.3rem;
+}
+.texto-descritivo{
+    position: relative;
+    font-size: 1.5rem;
+    padding: 10px;
+    text-align: center;
+    color:#e4e4e4 ;
+}
+.conteiner-sobre{
+    margin-left: 5%;
+
+}
 .img-sobre{
+    border-radius: 20px;
         width: 60vw
+        
 }
