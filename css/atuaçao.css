@@ -1,0 +1,18 @@
+@charset "UTF-8";
+
+
+.areas-de-atuaçao{
+    font-size: 2rem;
+}
+#titulo-atuacao{
+text-align: center;
+font-size: 4.5rem;
+}
+.especialidade{
+    background-color: #0a192f;
+    color: white;
+}
+.conteiner-titulos-atuaçao{
+    display:flex;
+    flex-direction: row;
+}
