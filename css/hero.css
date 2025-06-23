@@ -6,7 +6,6 @@
     color: white;
 }
 .conteiner-hero{
- max-width: 412px;
  position: relative;
  padding-top: 70%;
 }
@@ -14,12 +13,13 @@
 .cta-hero{
     position: absolute;
     font-size: 3rem;
-    padding: 0px 0px 0px 10vw;
+    
 }
 .cta-hero h1{
     margin: 0%;
     font-size: 8rem;
     color: #A08452;
+    padding-left: 7%;
 }
 
 .cta-hero p{
@@ -29,6 +29,7 @@
     text-align: left;
     font-size: 3.5rem;
     text-transform: capitalize;
+    padding-left: 7%;
 }
 #cor{
     color: #A08452;
@@ -40,7 +41,8 @@
     padding: 3%;
     border-radius: 10px;
     text-decoration: none;
-  
+    margin-left: 7%;
+
 }
 
 
