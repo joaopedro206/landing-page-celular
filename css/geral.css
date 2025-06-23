@@ -1,5 +1,10 @@
 @charset "UTF";
 
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display+SC:wght@400;700;900&display=swap');
+ 
+
+
+
 html, body{
     font-size: 62.5%;
     margin: 0%;

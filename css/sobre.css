@@ -1,41 +1,24 @@
 @charset "UTF-8";
 
-.sobre{
-    position: relative;
-}
-.conteiner-titulo-sobre{
-    display: flex;
-    justify-content: center;
-    font-size: 3rem;
-    margin-bottom: 20rem;
-    color: #a08452;
+.conteiner-fundo{
+    background-image: url(../imagens/fundo-sobre.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+     display: flex;
+    flex-direction: column;
     
 }
-.conteiner-color-texto{
+.conteiner-titulo-sobre{
+    font-size: 5rem;
+    text-align: center;
+}
+.conteiner-balança{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #6b4e2e;
-    height: 32.1rem;
-    width: 22.5rem;
-    border-radius: 2rem;
-    position: absolute;
-    top: 14rem;
-    right: 5%;
+    
 }
-.texto-descritivo{
-    position: relative;
-    font-size: 1.5rem;
-    padding: 0px 10px 0px 10px;
-    text-align: center;
-    color:#e4e4e4 ;
-}
-.conteiner-sobre{
-    margin-left: 5%;
-
-}
-.img-sobre{
-    border-radius: 2rem;
-        width: 60vw
-        
+.conteiner-color-texto{
+    font-size: 2rem;
+    padding: 8%;
 }
