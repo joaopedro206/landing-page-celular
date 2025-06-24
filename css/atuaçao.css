@@ -15,10 +15,7 @@
     flex-direction: column;
     
 }
-#titulo-atuacao{
-text-align: center;
-font-size: 6rem;
-}
+
 .especialidade{
     background-color: white;
     color: black;
@@ -35,6 +32,35 @@ font-size: 6rem;
 .conteiner-titulos-atuaçao{
     display:flex;
     flex-direction: row;
-    justify-content:center;
+    justify-content:space-between;
+    font-size: 7vw;
+    margin: 0%;
+}
+.conteiner-titulos-atuaçao h3{
+    margin: 0%;
     
+}
+
+
+
+
+
+
+
+
+
+#titulo-atuacao{
+    display: flex;
+    flex-direction: column;
+text-align: left;
+font-size: 7vh;
+color: #A08452 ;
+padding: 0% 10% 0% 10%;
+font-family: 'Playfair Display SC';
+font-weight: 100;
+line-height: 5rem;
+}
+#titulo-profissional{
+    color: #0B1C2C;
+    text-align: right;
 }
