@@ -4,33 +4,49 @@
 .conteiner-color{
     background-color: #0B1C2C ;
     color: white;
+    position: relative;
 }
 .conteiner-hero{
  position: relative;
- padding-top: 70%;
+ padding-top: 33vh;
+ 
 }
-
+.conteiner-cta{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    
+}
 .cta-hero{
     position: absolute;
-    font-size: 3rem;
+    bottom: 58%;
     
 }
 .cta-hero h1{
     margin: 0%;
-    font-size: 6rem;
+    font-size: 15vw;
     color: #A08452;
     padding-left: 7%;
     font-family: 'Playfair Display SC';
+    font-weight: 600;
+    line-height: 15vw;
+}
+#tamanho-titulo-hero{
+    font-size: 16vw;
+    letter-spacing: 0.6vw;
+    
 }
 
 .cta-hero p{
     margin: 0%;
     margin-bottom: 20px;
-    width: 73%;
+    width: 65vw;
     text-align: left;
-    font-size: 3.5rem;
+    font-size: 7.2vw;
     text-transform: capitalize;
     padding-left: 7%;
+    font-family: 'Playfair Display SC';
+    line-height: 10vw;
 }
 #cor{
     color: #A08452;
@@ -38,7 +54,7 @@
 .cta-hero a{
     background-color: #A08452;
     color: #0B1C2C;
-    font-size: 2rem;
+    font-size: 5.3vw;
     padding: 3%;
     border-radius: 10px;
     text-decoration: none;
