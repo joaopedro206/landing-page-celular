@@ -8,7 +8,7 @@
 }
 .conteiner-hero{
  position: relative;
- padding-top: 33vh;
+ padding-top: 30vh;
  
 }
 .conteiner-cta{
@@ -19,17 +19,17 @@
 }
 .cta-hero{
     position: absolute;
-    bottom: 58%;
+    bottom: 56%;
     
 }
 .cta-hero h1{
     margin: 0%;
     font-size: 15vw;
     color: #A08452;
-    padding-left: 7%;
+    padding-left: 9%;
     font-family: 'Playfair Display SC';
     font-weight: 600;
-    line-height: 15vw;
+    line-height: 16vw;
 }
 #tamanho-titulo-hero{
     font-size: 16vw;
@@ -39,12 +39,12 @@
 
 .cta-hero p{
     margin: 0%;
-    margin-bottom: 20px;
+    margin-bottom: 4vh;
     width: 65vw;
     text-align: left;
     font-size: 7.2vw;
     text-transform: capitalize;
-    padding-left: 7%;
+    padding-left: 9%;
     font-family: 'Playfair Display SC';
     line-height: 10vw;
 }
@@ -58,8 +58,8 @@
     padding: 3%;
     border-radius: 10px;
     text-decoration: none;
-    margin-left: 7%;
-
+    margin-left: 9%;
+    font-weight: bolder;
 }
 
 
