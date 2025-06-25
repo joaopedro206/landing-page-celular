@@ -6,10 +6,11 @@
     background-size: cover;
      display: flex;
     flex-direction: column;
+    box-shadow: 10px 10px 10px;
     
 }
 .conteiner-titulo-sobre{
-    font-size: 5rem;
+    font-size: 4rem;
     text-align: center;
 }
 .conteiner-balança{

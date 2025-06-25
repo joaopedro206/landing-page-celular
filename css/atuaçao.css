@@ -5,9 +5,9 @@
     font-size: 2rem;
     padding: 2rem;
     padding-top: 5rem;
-    
-    height: 100%;
     background-color:#0B1C2C ;
+    
+    box-shadow: 1px 1px 20px 0px rgb(6 5 5);
     
 }
 .conteiner-flex-atuaçao{
@@ -17,6 +17,7 @@
 }
 
 .especialidade{
+    text-align:  center;
     background-color: white;
     color: black;
     margin-bottom: 5rem;
@@ -24,6 +25,7 @@
     flex: 1 1 295px;
     border-radius: 20px;
     background-image: url(../imagens/fundo-atuaçao.png);
+    
 }
 .img-logo{
     width: 7rem;
@@ -31,14 +33,20 @@
 }
 .conteiner-titulos-atuaçao{
     display:flex;
-    flex-direction: row;
-    justify-content:space-between;
-    font-size: 7vw;
+    justify-content: center;
+    align-items: center;
+    font-size: 5.5vw;
     margin: 0%;
+    font-family: 'Playfair Display SC';
+    color: #A08452 ;
+    
 }
 .conteiner-titulos-atuaçao h3{
     margin: 0%;
-    
+        width: 65vw;
+}
+.titulo-espaço{
+    text-align: center;
 }
 
 
@@ -50,17 +58,16 @@
 
 
 #titulo-atuacao{
-    display: flex;
-    flex-direction: column;
-text-align: left;
-font-size: 7vh;
+  text-align: center;
+font-size: 6vh;
 color: #A08452 ;
-padding: 0% 10% 0% 10%;
 font-family: 'Playfair Display SC';
-font-weight: 100;
-line-height: 5rem;
+font-weight: 400;
+line-height: 6vh;
+}
+#atuaçao-titulo{
+    
 }
 #titulo-profissional{
     color: #0B1C2C;
-    text-align: right;
 }
