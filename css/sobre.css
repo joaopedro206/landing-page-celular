@@ -1,12 +1,16 @@
 @charset "UTF-8";
 
+.sobre{
+    
+    box-shadow: 10px 10px 10px rgb(247, 247, 247);
+}
 .conteiner-fundo{
     background-image: url(../imagens/fundo-sobre.png);
     background-repeat: no-repeat;
     background-size: cover;
      display: flex;
     flex-direction: column;
-    box-shadow: 10px 10px 10px;
+    box-shadow: 10px 10px 10px rgb(58, 58, 58);
     
 }
 .conteiner-titulo-sobre{

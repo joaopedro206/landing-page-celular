@@ -1,0 +1,38 @@
+@charset "UTF-8";
+
+
+.footer{
+    font-size: 2rem;
+    text-align: center;
+}
+.footer h3{
+    text-align: left;
+    padding-left: 7vw;
+}
+.footer-inicio{
+    display: flex;
+    font-size: 6.5vw;
+    padding-left: 7vw;
+    gap: 1vw;
+    
+}
+.footer-inicio img{
+    width: 17vw;
+    height: 9vh;
+    padding-top: 2vh;
+}
+.footer-copy p{
+    margin: 0%;
+    font-size: 3vw;
+    padding: 1vh;
+    background-color:  #0B1C2C;
+    color: #A08452;
+}
+.footer-loca{
+    padding-left: 7vw;
+    text-align: left;
+}
+.footer-loca h3{
+    text-align: left;
+    padding: 0%;
+}
