@@ -2,7 +2,7 @@
 
 
 .areas-de-atuaçao{
-    font-size: 2rem;
+    font-size: 5.5vw;
     padding: 2rem;
     padding-top: 5rem;
     background-color:#0B1C2C ;
@@ -13,6 +13,8 @@
 .conteiner-flex-atuaçao{
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     
 }
 
@@ -22,10 +24,14 @@
     color: black;
     margin-bottom: 5rem;
     padding: 2rem;
-    flex: 1 1 295px;
+    width: 80vw;
+    height: 40vh;
     border-radius: 20px;
     background-image: url(../imagens/fundo-atuaçao.png);
-    
+    line-height: 1.6;
+}
+.especialidade p{
+    text-align: left;
 }
 .img-logo{
     width: 7rem;
