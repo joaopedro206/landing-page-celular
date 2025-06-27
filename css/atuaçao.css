@@ -24,14 +24,13 @@
     color: black;
     margin-bottom: 5rem;
     padding: 2rem;
-    width: 80vw;
-    height: 40vh;
-    border-radius: 20px;
+    flex: 1 1 300px;
+    border-radius: 4vw;
     background-image: url(../imagens/fundo-atuaçao.png);
     line-height: 1.6;
 }
 .especialidade p{
-    text-align: left;
+    text-align: center;
 }
 .img-logo{
     width: 7rem;
