@@ -69,29 +69,33 @@
  
   .curva-cima {
       position: relative;
-      bottom: 11px;
+      bottom: 8px;
       left: 0;
       width: 100%;
+      overflow: hidden;
       line-height: 0;
+      
   }
   
   .curva-cima svg {
       position: relative;
-      bottom: 9px;
+      bottom: -7px;
       display: block;
-      width: calc(122% + 71.3px);
-      height: 35px;
+      width: calc(100% + 148.3px);
+      height: 10px;
+      
       
   }
   
   .curva-cima .shape-fill {
       fill: #0B1C2C;
+      
   }
   
 
 .curva-baixo {
     position: relative;
-    bottom: 36px;
+    bottom: 10px;
     left: 0;
     width: 100%;
     overflow: hidden;
@@ -103,7 +107,7 @@
     position: relative;
     display: block;
     width: calc(122% + 71.3px);
-      height: 35px;
+      height: 10px;
 }
 
 .curva-baixo .shape-fill {
