@@ -79,7 +79,7 @@
   
   .curva-cima svg {
       position: relative;
-      bottom: -7px;
+      bottom: 0px;
       display: block;
       width: calc(100% + 148.3px);
       height: 10px;
