@@ -65,6 +65,48 @@
 
 .img-hero {
   width: 100%;
- 
-  
 }
+ 
+  .curva-cima {
+      position: relative;
+      bottom: 11px;
+      left: 0;
+      width: 100%;
+      line-height: 0;
+  }
+  
+  .curva-cima svg {
+      position: relative;
+      bottom: 9px;
+      display: block;
+      width: calc(122% + 71.3px);
+      height: 35px;
+      
+  }
+  
+  .curva-cima .shape-fill {
+      fill: #0B1C2C;
+  }
+  
+
+.curva-baixo {
+    position: relative;
+    bottom: 36px;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.curva-baixo svg {
+    position: relative;
+    display: block;
+    width: calc(122% + 71.3px);
+      height: 35px;
+}
+
+.curva-baixo .shape-fill {
+    fill: #0B1C2C;
+}
+
