@@ -1,12 +1,14 @@
 @charset "UTF-8";
 
-
+.ordem-atuaçao{
+    position: relative;
+}
 .areas-de-atuaçao{
     font-size: 5.5vw;
     padding: 2rem;
     padding-top: 5rem;
     background-color:#0B1C2C ;
-    
+    position: relative;
     
     
 }
@@ -75,4 +77,51 @@ line-height: 6vh;
 }
 #titulo-profissional{
     color: #0B1C2C;
+}
+
+
+
+
+
+/*cursa atuação*/
+
+.curva-cima-atuaçao {
+      position: absolute;
+      top: -9px;
+      width: 100%;
+      overflow: hidden;
+      line-height: 0;
+      z-index: 2;
+  }
+  
+  .curva-cima-atuaçao svg {
+      
+      display: block;
+      width: calc(100% + 148.3px);
+      height: 10px;
+  }
+  
+  .curva-cima-atuaçao .shape-fill {
+      fill: #0B1C2C;
+  }
+  
+
+.curva-baixo-atuaçao {
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+    z-index: 2;
+}
+
+.curva-baixo-atuaçao svg {
+    display: block;
+    width: calc(122% + 71.3px);
+      height: 10px;
+}
+
+.curva-baixo-atuaçao .shape-fill {
+    fill: #0B1C2C;
 }
