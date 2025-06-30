@@ -1,13 +1,32 @@
 @charset "UTF-8";
 
 .sobre{
-    background-image: url(../imagens/fundo-sobre.png);
     background-repeat: no-repeat;
     background-size: cover;
      display: flex;
     flex-direction: column;
     box-shadow: 10px 10px 10px rgb(58, 58, 58);
-    
+    position: relative;
+     
+}
+.custom-shape-divider-bottom-1751280837 {
+    position: absolute;
+    top: -11px;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-bottom-1751280837 svg {
+    position: relative;
+    display: block;
+    width: calc(156% + 1.3px);
+    height: 12px;
+}
+
+.custom-shape-divider-bottom-1751280837 .shape-fill {
+    fill: #FFFFFF;
 }
 .conteiner-fundo{
     

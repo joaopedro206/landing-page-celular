@@ -87,7 +87,7 @@ line-height: 6vh;
 
 .curva-cima-atuaçao {
       position: absolute;
-      top: -9px;
+        top: -9px;
       width: 100%;
       overflow: hidden;
       line-height: 0;
@@ -96,13 +96,17 @@ line-height: 6vh;
   
   .curva-cima-atuaçao svg {
       
+      
       display: block;
       width: calc(100% + 148.3px);
       height: 10px;
+      
+      
   }
   
   .curva-cima-atuaçao .shape-fill {
       fill: #0B1C2C;
+      
   }
   
 
@@ -117,6 +121,7 @@ line-height: 6vh;
 }
 
 .curva-baixo-atuaçao svg {
+    
     display: block;
     width: calc(122% + 71.3px);
       height: 10px;
