@@ -60,7 +60,7 @@
 /*hanburg*/
 /* Estilos para o Cabeçalho principal */
 .main-header {
-    padding: 2rem 0% 2rem 85%;
+    padding: 1rem 0% 0rem 85%;
     background-color: #0B1C2C; 
     color: white;
     position: sticky; 
@@ -101,20 +101,25 @@
 }
 
 /* Estilo do menu de navegação (inicialmente escondido) */
-.main-nav {
+
+    .main-nav {
     position: absolute;
-    top: 100%; /* Posiciona abaixo do cabeçalho */
-    left: 0;
-    width: 100%;
-    background-color: #0B1C2C; /* Mesma cor de fundo do cabeçalho */
-    max-height: 0; /* Esconde o menu */
-    overflow: hidden; /* Garante que o conteúdo extra não apareça */
-    transition: max-height 0.5s ease-in-out; /* Suaviza a abertura/fechamento */
+    top: 100%;
+    right: 0;
+    width: 50%; /* ou a largura que você definiu */
+    /* background-color: #0B1C2C; <--- REMOVA ou COMENTE esta linha */
+    background-color: rgba(11, 28, 44, 0.9); /* <<< ADICIONE ESTA LINHA */
+    /* Usando os valores RGB da sua cor #0B1C2C com 90% de opacidade */
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-in-out, width 0.5s ease-in-out;
     display: flex;
-    justify-content: center; /* Centraliza os links, se desejar */
-    align-items: center;
-    flex-direction: column; /* Links um abaixo do outro */
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    box-shadow: -5px 5px 10px rgba(0, 0, 0, 0.3);
 }
+
 
 .main-nav ul {
     list-style: none; /* Remove marcadores de lista */
