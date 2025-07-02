@@ -13,10 +13,27 @@
     <title>landing-page</title>
 </head>
 <body>
+  <header class="main-header">
+    
+    <input type="checkbox" id="menu-toggle" class="menu-toggle">
+    <label for="menu-toggle" class="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+    </label>
+
+    <nav class="main-nav">
+        <ul>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#atuacao">Atuação Profissional</a></li>
+            <li><a href="#contato">Contato</a></li>
+        </ul>
+    </nav>
+</header>
     <div class="conteiner-color">
       <div class="conteiner-cta">
         <div class="cta-hero">
-            <h1><class id="tamanho-titulo-hero">Lourivan</class> advogado</h1>
+            <h1>Lourivan de araujo</h1>
             <p>sua <span id="cor">segurança juridíca</span> começa aqui.</p>
             <a href="#">fale conosco</a>
           </div>
@@ -28,8 +45,8 @@
     
     
     
-    <article class="sobre">
-      <div class="custom-shape-divider-bottom-1751280837">
+    <article id="sobre" class="sobre">
+      <div id="sobre" class="custom-shape-divider-bottom-1751280837">
     <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
         <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" class="shape-fill"></path>
     </svg>
@@ -116,14 +133,16 @@
         <div class="footer-inicio">
           <img src="imagens/logo100px.png" alt="">
           <p>
-            <strong>Dr. Lourivan de Araujo</strong>
+            <strong>Lourivan de Araujo</strong>
           </p>
         </div>
-        <h3>contatos</h3>
-        <p>
-          Email: <a href="mailto:contato@seudominio.com.br">contato@seudominio.com.br</a><br>
-          WhatsApp: <a href="https://wa.me/55SEUNUMERO" target="_blank">(00) 91234-5678</a>
-        </p>
+        <div class="footer-cont">
+          <h3>contatos</h3>
+          <p>
+            Email: <a href="mailto:contato@seudominio.com.br">contato@seudominio.com.br</a><br>
+            WhatsApp: <a href="https://wa.me/55SEUNUMERO" target="_blank">(00) 91234-5678</a>
+          </p>
+        </div>
       </div>
       <div class="footer-loca">
         <h3>localizaçao</h3>

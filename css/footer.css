@@ -4,7 +4,7 @@
 .footer{
     font-size: 2rem;
     text-align: center;
-    color: #A08452;
+    color: #0B1C2C;
 }
 .footer h3{
     text-align: left;
@@ -12,15 +12,22 @@
 }
 .footer-inicio{
     display: flex;
-    font-size: 6.5vw;
+    font-size: 7.5vw;
     padding-left: 7vw;
-    gap: 1vw;
+    gap: 5vw;
     
 }
 .footer-inicio img{
     width: 17vw;
     height: 9vh;
     padding-top: 2vh;
+}
+.footer-cont{
+    text-align: left;
+    padding-left: 7vw;
+}
+.footer-cont h3{
+    padding-left: 0%;
 }
 .footer-copy p{
     margin: 0%;

@@ -9,24 +9,12 @@
     padding-top: 5rem;
     background-color:#0B1C2C ;
     position: relative;
-    
-    
 }
-.conteiner-flex-atuaçao{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    
-}
-
 .especialidade{
-    text-align:  center;
     background-color: white;
-    color: black;
+    color: #0B1C2C;
     margin-bottom: 5rem;
     padding: 2rem;
-    flex: 1 1 300px;
     border-radius: 4vw;
     background-image: url(../imagens/fundo-atuaçao.png);
     line-height: 1.6;
@@ -42,11 +30,7 @@
     display:flex;
     justify-content: center;
     align-items: center;
-    font-size: 5.5vw;
-    margin: 0%;
-    font-family: 'Playfair Display SC';
     color: #A08452 ;
-    
 }
 .conteiner-titulos-atuaçao h3{
     margin: 0%;
@@ -56,14 +40,6 @@
     text-align: center;
 }
 
-
-
-
-
-
-
-
-
 #titulo-atuacao{
   text-align: center;
 font-size: 6vh;
@@ -72,16 +48,10 @@ font-family: 'Playfair Display SC';
 font-weight: 400;
 line-height: 6vh;
 }
-#atuaçao-titulo{
-    
-}
+
 #titulo-profissional{
     color: #0B1C2C;
 }
-
-
-
-
 
 /*cursa atuação*/
 
@@ -93,23 +63,15 @@ line-height: 6vh;
       line-height: 0;
       z-index: 2;
   }
-  
   .curva-cima-atuaçao svg {
-      
-      
       display: block;
       width: calc(100% + 148.3px);
       height: 10px;
-      
-      
   }
-  
   .curva-cima-atuaçao .shape-fill {
       fill: #0B1C2C;
       
   }
-  
-
 .curva-baixo-atuaçao {
     position: absolute;
     top: 0px;

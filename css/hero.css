@@ -7,15 +7,8 @@
     position: relative;
 }
 .conteiner-hero{
- position: relative;
  padding-top: 30vh;
  
-}
-.conteiner-cta{
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    
 }
 .cta-hero{
     position: absolute;
@@ -41,11 +34,9 @@
     margin: 0%;
     margin-bottom: 4vh;
     width: 65vw;
-    text-align: left;
     font-size: 7.2vw;
     text-transform: capitalize;
     padding-left: 9%;
-    font-family: 'Playfair Display SC';
     line-height: 10vw;
 }
 #cor{
@@ -65,6 +56,146 @@
 
 .img-hero {
   width: 100%;
+}
+/*hanburg*/
+/* Estilos para o Cabeçalho principal */
+.main-header {
+    padding: 2rem 0% 2rem 85%;
+    background-color: #0B1C2C; 
+    color: white;
+    position: sticky; 
+    top: 0;
+    z-index: 3; 
+    width: 100%;
+    box-sizing: border-box; 
+}
+
+.main-header .logo h1 {
+    margin: 0; /* Remover margem padrão do h1 aqui */
+    font-size: 5vw; /* Ajuste o tamanho do logo para mobile */
+    color: #A08452; /* Cor do logo */
+}
+
+/* Oculta o checkbox */
+.menu-toggle {
+    display: none;
+}
+
+/* Estilo do ícone hambúrguer */
+.hamburger {
+    display: flex; /* Para centralizar as barras */
+    flex-direction: column;
+    justify-content: space-around;
+    width: 30px; /* Largura do ícone */
+    height: 25px; /* Altura do ícone */
+    cursor: pointer;
+    z-index: 3;
+}
+
+.hamburger .bar {
+    width: 100%;
+    height: 3px; /* Espessura da barra */
+    background-color: white; /* Cor das barras */
+    border-radius: 2px;
+    transition: all 0.3s ease-in-out; /* Suaviza a transição das barras */
+}
+
+/* Estilo do menu de navegação (inicialmente escondido) */
+.main-nav {
+    position: absolute;
+    top: 100%; /* Posiciona abaixo do cabeçalho */
+    left: 0;
+    width: 100%;
+    background-color: #0B1C2C; /* Mesma cor de fundo do cabeçalho */
+    max-height: 0; /* Esconde o menu */
+    overflow: hidden; /* Garante que o conteúdo extra não apareça */
+    transition: max-height 0.5s ease-in-out; /* Suaviza a abertura/fechamento */
+    display: flex;
+    justify-content: center; /* Centraliza os links, se desejar */
+    align-items: center;
+    flex-direction: column; /* Links um abaixo do outro */
+}
+
+.main-nav ul {
+    list-style: none; /* Remove marcadores de lista */
+    padding: 0;
+    margin: 0;
+    width: 100%; /* Ocupa a largura total do menu */
+    text-align: center;
+}
+
+.main-nav li {
+    padding: 1.5rem 0; /* Espaçamento entre os itens do menu */
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1); /* Separador sutil */
+}
+
+.main-nav li:last-child {
+    border-bottom: none; /* Remove borda do último item */
+}
+
+.main-nav a {
+    text-decoration: none;
+    color: white; /* Cor dos links do menu */
+    font-size: 1.8rem; /* Tamanho da fonte dos links */
+    display: block; /* Faz o link ocupar todo o espaço clicável */
+    padding: 1rem; /* Aumenta a área clicável */
+    font-family: 'playfair display'; /* Sua fonte para texto */
+    font-weight: 500;
+}
+
+.main-nav a:hover {
+    background-color: #A08452; /* Cor de destaque ao passar o mouse */
+    color: #0B1C2C;
+}
+
+/* Regras para quando o checkbox está marcado (menu aberto) */
+.menu-toggle:checked ~ .main-nav {
+    max-height: 300px; /* Altura suficiente para mostrar todos os links */
+}
+
+/* Animação do hambúrguer para o "X" */
+.menu-toggle:checked ~ .hamburger .bar:nth-child(1) {
+    transform: translateY(11px) rotate(45deg); /* Barra superior */
+}
+
+.menu-toggle:checked ~ .hamburger .bar:nth-child(2) {
+    opacity: 0; /* Barra do meio some */
+}
+
+.menu-toggle:checked ~ .hamburger .bar:nth-child(3) {
+    transform: translateY(-11px) rotate(-45deg); /* Barra inferior */
+}
+
+/* MEDIA QUERY para Desktop: Esconder hambúrguer e mostrar menu normalmente */
+@media (min-width: 768px) { /* Defina seu breakpoint para desktop */
+    .hamburger,
+    .menu-toggle {
+        display: none; /* Esconde o hambúrguer e o checkbox em desktop */
+    }
+
+    .main-nav {
+        position: static; /* Volta ao fluxo normal */
+        max-height: none; /* Remove a altura máxima */
+        overflow: visible; /* Torna o conteúdo visível */
+        display: flex; /* Flexbox para alinhar links lado a lado */
+        flex-direction: row; /* Links em linha */
+        width: auto;
+        background-color: transparent; /* Fundo transparente */
+    }
+
+    .main-nav ul {
+        display: flex;
+        width: auto;
+    }
+
+    .main-nav li {
+        border-bottom: none; /* Remove as bordas dos itens */
+        padding: 0 1.5rem; /* Espaçamento lateral entre links */
+    }
+
+    .main-nav a {
+        padding: 0.5rem 1rem; /* Ajusta o padding dos links */
+    }
 }
  
   
