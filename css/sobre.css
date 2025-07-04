@@ -9,7 +9,7 @@
     position: relative;
      
 }
-.custom-shape-divider-bottom-1751280837 {
+.curva-hero_sobre {
     position: absolute;
     top: -11px;
     left: 0;
@@ -18,14 +18,14 @@
     line-height: 0;
 }
 
-.custom-shape-divider-bottom-1751280837 svg {
+.curva-hero_sobre svg {
     position: relative;
     display: block;
     width: calc(156% + 1.3px);
     height: 12px;
 }
 
-.custom-shape-divider-bottom-1751280837 .shape-fill {
+.curva-hero_sobre .shape-fill {
     fill: #FFFFFF;
 }
 .conteiner-fundo{
