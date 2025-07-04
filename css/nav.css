@@ -1,73 +1,199 @@
-
-
-body {
-  font-family: 'Segoe UI', sans-serif;
-  background-color: #f5f5f5;
-}
-
 /* Container para alinhar botão e menu juntos */
 .menu-container {
   position: fixed;
   top: 20px;
   right: 20px;
   z-index: 1001;
+  background: transparent;
+  padding: 5px;
 }
 
-/* Botão hambúrguer */
+/* Botão hambúrguer refinado */
 .menu-btn {
-  width: 50px;
-  height: 50px;
-  background: #111;
+  width: 48px;
+  height: 48px;
+  background: #0B1C2C;
   border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.06);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
 }
 
+.menu-btn:hover {
+  background-color: #162b40;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.3);
+}
+
+/* Linhas do hambúrguer */
 .menu-btn span {
   display: block;
-  width: 25px;
-  height: 3px;
-  background-color: white;
+  width: 26px;
+  height: 2px;
+  background-color: #A08452;
   margin: 4px 0;
-  transition: 0.3s;
+  border-radius: 1px;
+  transition: all 0.3s ease;
 }
 
-/* Menu pequeno flutuante ao lado do botão */
+/* Transformação para "X" mais alinhado e leve */
+.menu-btn.open span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.menu-btn.open span:nth-child(2) {
+  opacity: 0;
+}
+
+.menu-btn.open span:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+
+/* Estilos Padrão (Mobile First - para telas menores) */
 .menu {
-  position: absolute;
-  top: 60px; /* abaixo do botão */
-  right: 0;
-  width: 160px;
-  background-color: #222;
-  border-radius: 8px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-  display: none;
-  flex-direction: column;
-  padding: 10px 0;
+    position: absolute;
+    top: 58px; /* Ajuste conforme a altura do seu cabeçalho */
+    right: 0; /* Alinha à direita */
+    min-width: 140px; /* Um mínimo razoável */
+    /* Removendo max-width e width para que ele possa se expandir se necessário */
+    width: auto; /* Deixa o conteúdo definir a largura inicial */
+    max-width: calc(100% - 20px); /* Ex: 100% da tela menos 20px de margem */
+    
+    background: linear-gradient(135deg, #0B1C2C, #1A2C3C);
+    border-radius: 12px;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.25);
+    display: none;
+    flex-direction: column;
+    padding: 10px 0;
+    border: 1px solid #A08452;
+    z-index: 1002;
+    backdrop-filter: blur(6px);
+    animation: fadeSlideIn 0.3s ease forwards;
+    transform-origin: top right; /* Importante para a animação */
 }
 
-/* Quando ativo, mostra o menu */
+/* Mostra quando ativo */
 .menu.active {
-  display: flex;
+    display: flex;
 }
 
+/* Links refinados */
+/* Unifiquei as duas regras de .menu a aqui */
+/* Links refinados */
 .menu a {
-  padding: 12px 20px;
-  color: white;
-  text-decoration: none;
-  font-size: 16px;
-  transition: background-color 0.2s;
+    padding: 12px 10px;
+    color: #A08452;
+    text-decoration: none;
+    font-size: 15.5px;
+    font-weight: 600;
+    letter-spacing: 0.4px;
+    text-align: center;
+    transition: all 0.25s ease;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: relative;
+    /* REMOVA OU ALTERE ESTA LINHA */
+    /* white-space: nowrap; */ /* <-- Remova esta linha ou mude para 'normal' */
+    white-space: normal; /* Permite que o texto quebre a linha */
+    word-wrap: break-word; /* Garante que palavras muito longas também quebrem */
+    overflow-wrap: break-word; /* Versão mais moderna de word-wrap */
 }
 
-.menu a:hover {
-  background-color: #00ffcc;
-  color: #111;
-  border-radius: 4px;
+
+/* Ícone decorativo só aparece no hover (se quiser manter) */
+.menu a::before {
+    content: '';
+    position: absolute;
+    left: 10px; /* Ajuste conforme necessário */
+    opacity: 0;
+    transform: translateX(-5px);
+    transition: all 0.3s ease;
 }
+
+/* Efeito de destaque suave no hover */
+.menu a:hover {
+    background-color: rgba(160, 132, 82, 0.1);
+    color: #0B1C2C; /* Certifique-se que esta cor tenha bom contraste */
+}
+
+/* Animação de fade-in (você provavelmente já tem, mas garantindo) */
+@keyframes fadeSlideIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9) translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1) translateY(0);
+    }
+}
+
+
+/* --- Media Queries para Telas Maiores --- */
+
+/* Por exemplo, para telas maiores que 768px (tablets e desktops) */
+@media (min-width: 768px) {
+    .menu {
+        /* Para telas maiores, o menu pode ter uma largura fixa ou máxima maior */
+        max-width: 200px; /* Exemplo: um pouco maior para desktops */
+        /* Se quiser que ele se alinhe de forma diferente, ajuste 'right' ou use 'left'/'margin: auto' */
+        /* Exemplo: Se o menu fosse sempre visível no desktop, poderia ser display: flex; position: static; etc. */
+    }
+
+    /* Se você quiser que o menu se transforme em uma barra de navegação horizontal no desktop */
+    /* Este é um exemplo, você precisaria ajustar a estrutura HTML se o menu hamburguer e o menu desktop forem o mesmo elemento */
+    /*
+    .menu-container {
+        display: none; // Esconde o botão hamburguer no desktop
+    }
+
+    .menu {
+        position: static; // Não é mais absoluto
+        display: flex; // Sempre visível
+        flex-direction: row; // Links em linha
+        width: auto;
+        max-width: none;
+        background: none; // Remove o fundo do menu pop-up
+        box-shadow: none;
+        border: none;
+        border-radius: 0;
+        padding: 0;
+        backdrop-filter: none;
+        animation: none;
+    }
+
+    .menu a {
+        padding: 10px 15px; // Ajuste o padding para links horizontais
+        color: #A08452; // Mantenha a cor ou ajuste
+        // Outros estilos...
+    }
+    */
+}
+
+/* Para telas ainda maiores, como desktops grandes */
+@media (min-width: 1024px) {
+    /* Ajustes específicos para desktops grandes, se necessário */
+}
+
+
+
+/* Nova animação: fade + scale + slide */
+@keyframes fadeSlideIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.95) translateY(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+
+
 
 
 
