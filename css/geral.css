@@ -15,7 +15,7 @@ html, body{
     margin: 0%;
     padding: 0%;
     box-sizing: border-box;
-    
+    scroll-behavior: smooth;
 }
 p{
     font-family: 'playfair display';
@@ -23,6 +23,7 @@ p{
 }
 h1 ,h2 ,h3{
     font-family: 'playfair display sc';
+    
 }
 
 

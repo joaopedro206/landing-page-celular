@@ -4,7 +4,8 @@
 .footer{
     font-size: 2rem;
     text-align: center;
-    color: #0B1C2C;
+    color: #ffffff;
+    background-image: url(/imagens/ChatGPT\ Image\ 5\ de\ jul.\ de\ 2025\,\ 08_03_27.png);
 }
 .footer h3{
     text-align: left;
@@ -33,7 +34,7 @@
     margin: 0%;
     font-size: 3vw;
     padding: 1vh;
-    background-color:  #0B1C2C;
+    
     color: #A08452;
 }
 .footer-loca{
