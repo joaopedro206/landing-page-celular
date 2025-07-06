@@ -6,7 +6,6 @@
 .areas-de-atuaçao{
     font-size: 5.5vw;
     padding: 2rem;
-    padding-top: 5rem;
     position: relative;
 }
 .especialidade{
@@ -40,11 +39,12 @@
 
 .titulo-atuacao{
   text-align: center;
-font-size: 6vh;
+font-size: 7vh;
 color: #A08452 ;
 font-family: 'Playfair Display SC';
 font-weight: 400;
 line-height: 6vh;
+margin: 5vh 0vh 7vh 0vh;
 }
 
 #titulo-profissional{
