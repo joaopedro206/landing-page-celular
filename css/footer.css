@@ -41,6 +41,9 @@
     padding-left: 7vw;
     text-align: left;
 }
+.footer-loca p{
+    padding-bottom: 3vh;
+}
 .footer-loca h3{
     text-align: left;
     padding: 0%;
