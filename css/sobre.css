@@ -29,9 +29,13 @@
     
 }
 .conteiner-titulo-sobre{
-    font-size: 7vw;
+    
     text-align: center;
     color: #A08452;
+}
+.titulo-sobre{
+    font-size: 6vh;
+    line-height: 6vh;
 }
 .conteiner-color-texto{
     padding-left: 7vw;
