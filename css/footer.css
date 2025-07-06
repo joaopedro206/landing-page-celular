@@ -5,7 +5,7 @@
     font-size: 2rem;
     text-align: center;
     color: #ffffff;
-   background-image: url(/imagens/fundo-textura.webp);
+   background-image: url(../imagens/fundo-textura.webp);
     background-repeat:repeat-y;
 }
 .footer h3{

@@ -7,7 +7,7 @@
     font-size: 5.5vw;
     padding: 2rem;
     padding-top: 5rem;
-    background-image: url(/imagens/fundo-textura.webp);
+    background-image: url(../imagens/fundo-textura.webp);
     background-repeat:repeat-y;
     position: relative;
 }
