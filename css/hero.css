@@ -5,10 +5,14 @@
     color: white;
     
 }
+.conteiner-hero{
+ position: relative;
+ padding-top: 33vh;
+ 
+}
 .cta-hero{
-    position: relative;
-    top: 7vh;
-    
+     position: absolute;
+    bottom: 56%;
     
 }
 .cta-hero h1{
