@@ -2,8 +2,9 @@
 
 
 .conteiner-color{
-    background-image: url(../imagens/fundo-textura.webp);
-    background-repeat:repeat-y;
+    background-image: url(../imagens/ajuste.png);
+    background-repeat:no-repeat;
+    background-size: cover;
     color: white;
     position: relative;
 }
