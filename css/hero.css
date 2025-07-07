@@ -6,17 +6,17 @@
      background-color: #0B1C2C;
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1600 800'%3E%3Cg fill-opacity='0.09'%3E%3Cpolygon fill='%231c3a57' points='800 100 0 200 0 800 1600 800 1600 200'/%3E%3Cpolygon fill='%2332597d' points='800 200 0 400 0 800 1600 800 1600 400'/%3E%3Cpolygon fill='%234d779e' points='800 300 0 600 0 800 1600 800 1600 600'/%3E%3Cpolygon fill='%237895af' points='1600 800 800 400 0 800'/%3E%3Cpolygon fill='%23a5b2bf' points='1280 800 800 500 320 800'/%3E%3Cpolygon fill='%23ccd0d4' points='533.3 800 1066.7 800 800 600'/%3E%3Cpolygon fill='%23EEE' points='684.1 800 914.3 800 800 700'/%3E%3C/g%3E%3C/svg%3E");
     background-size: cover;
-    background-position-x: 70%;
+    background-position-x: 99.5%;
     
 }
 .conteiner-hero{
  position: relative;
- padding-top: 33vh;
+ 
  
 }
 .cta-hero{
-     position: absolute;
-    bottom: 56%;
+     position: relative;
+     top: 3vh;
     
 }
 .cta-hero h1{
@@ -48,20 +48,47 @@
 #cor{
     color: #A08452;
 }
-.cta-hero a{
-    background-color: #A08452;
-    color: #0B1C2C;
-    font-size: 5.3vw;
-    padding: 3%;
-    border-radius: 10px;
-    text-decoration: none;
-    margin-left: 9%;
-    font-weight: bolder;
-}
-
-
 .img-hero {
   width: 100%;
 }
+#fale-conosco{
+    position: relative;
+    left: 7vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0B1C2C;
+    box-shadow: 0px 2px 10px 0px #000000;
+
+    width: fit-content;
+    padding: 2vw 2vw 2vw 2vw;
+    border-radius: 0.5rem;
+}
+#fale-conosco img{
+    width: 8vw;
+}
+#fale-conosco a{
+   font-size: 5.5vw;
+   font-weight: bolder;
+   color: #ffffff;
+   text-decoration: none;
+   
+}
+@media (min-width: 1024px){
+    .conteiner-color{
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-end;
+    }
+    .cta-hero h1{
+    margin: 0%;
+    font-size: 3vw;
+    }
+    .cta-hero p{
+    font-size: 1vw;
+    
+    }
+}
+
   
 
